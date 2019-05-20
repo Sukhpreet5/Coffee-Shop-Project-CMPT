@@ -285,6 +285,12 @@ li.description{
 	margin: 4vw;
 }
 
+@media only screen and (max-width: 769px){
+	.cart{
+		margin: 0;
+	}
+}
+
 .clearboth {
 	clear: both;
 }
