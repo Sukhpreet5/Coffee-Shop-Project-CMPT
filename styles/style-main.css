@@ -1,0 +1,665 @@
+@font-face {
+    font-family: "Eusthalia Sans Slant";
+    src:url("fonts/eusthalia_sans_slant-webfont.woff") format("woff"),
+        url("fonts/Eusthalia Sans Slant.otf") format("opentype"),
+      	url("fonts/eusthalia_sans_slant-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src:url("fonts/lato-light-webfont.woff") format("woff"),
+        url("fonts/Lato-Light.otf") format("ttf"),
+        url("fonts/lato-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Odachi";
+    src:url("fonts/odachi-webfont.woff") format("woff"),
+        url("fonts/Odachi.otf") format("ttf"),
+        url("fonts/odachi-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato-Light";
+	src:url("fonts/lato-light-webfont.woff") format("woff"),
+        url("fonts/Lato-Light.ttf") format("ttf"),
+        url("fonts/lato-light-webfont.woff2") format("woff2");
+}
+
+.text-center{text-align: center;}
+.text-left{text-align: left}
+.text-right{text-align: right}
+
+/*Background Colors*/
+.brownbg{background-color: #300c06;}
+.beigebg{background-color: #eadfc0;}
+.orangebg{background-color: #da4e31;}
+.greybg{background-color: #dbdbdb;}
+
+/*Font Color*/
+.whiteFont{color: white;}
+.brown{color: #300c06;}
+.beige{color: #eadfc0;}
+.orange{color: #da4e31;}
+.grey{color: #dbdbdb;}
+
+.w100{width: 100%}
+
+.uppercase{text-transform: uppercase;}
+
+.margin-top{
+	margin-top: 25px;
+}
+
+.margin-top-large{
+	margin-top: 5%;
+}
+
+.margin-bottom{
+	margin-bottom: 25px;
+}
+
+.margin-bottom-large{
+	margin-bottom: 5%;
+}
+
+.no-margin-right{
+	margin-right: 0 !important;
+}
+
+.row-fix{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.no-margin{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.eusthalia{
+	font-family: "Eusthalia Sans Slant" !important;
+}
+
+.lato-light{
+	font-family: "Lato-Light";
+}
+
+.hidden{
+	display: none;
+}
+
+body {
+	background: #FFFF;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/**
+img {
+	width:100%;
+	vertical-align: top;
+}
+**/
+nav {
+	width: 50%;
+	position: absolute;
+	display: inline;
+	height:4vw;
+	top:2vw;
+	left:0.5vw;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    left: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+button.add-to-cart{
+	padding: 2px 10px;
+	background-color: #300c06;
+	color: #eadfc0;
+	font-size: 1.8vw;
+}
+
+.item-total{
+	color: #da4e31;
+	font-weight: bolder;
+}
+
+li.description{
+	text-align: left !important;
+}
+
+.menu-item {
+	position:relative;
+	font-family: "Eusthalia Sans Slant";
+	font-size:1.25vw;
+	margin-left: 2vw;
+    float: left;
+    text-align: left;
+    z-index: 1;
+}
+
+.menu-item::after {
+  position: absolute;
+  bottom: -10%;
+  height: 40%;
+  content: '';
+  background-color:#EADFC0;
+  left: -10%;
+  width: 120%;
+  z-index: -1;
+}
+
+
+.menu-item a {
+    text-decoration: none;
+    color:#300306;
+}
+
+.menu-item a:hover::after {
+  position: absolute;
+  bottom: -22%;
+  height: 40%;
+  content: '';
+  background-color:#DA4E31;
+  left: -10%;
+  width: 120%;
+  z-index: 0;
+}
+
+
+
+.header-banner-container {
+	position: relative;
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+
+#header-banner-home {
+	position: relative;
+	display: inline-block;
+	float:left;
+	background-image:url("../images/banners/Header - Coffee Cup.png");
+	background-size: cover;
+	width:64vw;
+	height:60vw;
+	left:0%;
+	text-align: center;
+}
+
+.header-banners-inside {
+	position: relative;
+	display: inline-block;
+	float:left;
+	background-image:url("../images/banners/Header - Coffee Cup - Wide.png");
+	background-size: cover;
+	width:60vw;
+	height:32.5vw;
+	left:0%;
+	text-align: center;
+}
+
+.header-banner-text-home {
+	position: absolute;
+	top:30%;
+	left:32%;
+	width:35%;
+	height:55%;
+	font-family: "Odachi", sans-serif;
+	color: white;
+	text-align:center;
+}
+
+.header-banner-text-inside {
+	position: absolute;
+	top:16%;
+	left:35%;
+	width:35%;
+	height:55%;
+	font-family: "Odachi", sans-serif;
+	color: white;
+	text-align:center;
+}
+
+.small-text {
+	font-size:10vw;
+}
+
+.small-text-inside {
+	font-size:8vw;
+}
+
+.large-text {
+	position: absolute;
+	top: 21%;
+	font-size:17vw;
+}
+
+.large-text-inside {
+	position: absolute;
+	top: 24%;
+	left:6%;
+	font-size:14vw;
+}
+
+.menu-item-cart-underline {
+	position: absolute;
+	top:3.85vw;
+	left: 56.5vw;
+	width:2.6vw;
+	height:0.75vw;
+	background-color: #EADFC0;
+	z-index:0;
+}
+
+.menu-item-cart {
+	position:absolute;
+	top:2.4vw;
+	left: 57vw;
+	width:1.75vw;
+	height:2vw;
+	background-image: url("../images/icons/Cart.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index:1;
+}
+
+
+#cart {
+	display: inline;
+}
+
+.cart{
+	font-size: 1vw;
+	font-weight: 400;
+	margin: 4vw;
+}
+
+.clearboth {
+	clear: both;
+}
+
+
+#icon {
+	float: left;
+	padding: 15px 15px;
+
+}
+
+
+#icon img {
+	width: 129px;
+	height: 43px;
+}
+
+.feature1 {
+   text-align: center;
+   margin-top: 5%; /*leave or not?*/
+	color: #300c06;
+
+
+}
+
+.feature-text1 {
+   position: relative;
+   display: inline;
+   font-family: "Odachi";
+   font-size:10vw;
+
+}
+
+.feature-big {
+}
+
+.feature-text1::after{
+  position: absolute;
+  bottom: 13%;
+  height: 26%;
+  content: '';
+  background-color: #EADFC0;
+  left: -10%; /* offset the left to account for half of the extended length (10% / 2) */
+  width: 108%; /* extend the length a little bit */
+  z-index: -1;
+}
+
+
+.feature2 {
+   	position: relative;
+	padding-top: 0.5vw;
+  	display:block;
+   	text-align: center;
+   	font-family: "Eusthalia Sans Slant";
+    font-size:1.5vw;
+    margin-bottom:6vw;
+}
+
+
+.coffee-menu {
+	margin: auto;
+	width: 69vw;
+	font-family: "Eusthalia Sans Slant";
+   	font-size:1.5vw;
+
+}
+
+.coffee-menu-item {
+	display:inline;
+ 	width: 32.7vw;
+	margin-bottom: 2vw;
+}
+
+.left {
+	float:left;
+}
+
+
+.coffee-menu-item {
+	display:inline;
+ 	width: 32.7vw;
+	margin-bottom: 2vw;
+}
+
+.right {
+	float:right;
+}
+
+
+.coffee-menu-item-product {
+	display:inline;
+}
+
+.coffee-menu-item-cost {
+	display:inline;
+	width:3vw;
+	text-align:center;
+	float:right;
+}
+
+
+.big-display-right {
+    position: relative;
+	width: 78vw;
+	margin-top: 16vw;
+	/*margin-left: 22vw;*/
+	left: 22vw;
+	height:24vw;
+	font-family: "Eusthalia Sans Slant";
+	font-size: 3vw;
+	background-color: #EADFC0;
+
+}
+
+
+.big-display-right-checkout {
+	position: relative;
+	width: 78vw;
+	margin-top: 10vw;
+	/*margin-left: 22vw;*/
+	left: 22vw;
+	height:24vw;
+	font-family: "Eusthalia Sans Slant";
+	font-size: 3vw;
+	background-color: #EADFC0;
+
+}
+
+
+.display-right-img-l {
+	position: absolute;
+	bottom:5vw;
+	left:-15vw;
+	width:25vw;
+	}
+
+
+.big-display-right-line-1 {
+	position: absolute;
+	font-size:1.75vw;
+	top: 6vw;
+	left: 19vw;
+}
+
+
+.big-display-right-line-2 {
+	position: absolute;
+	font-size:4.3vw;
+	top: 9vw;
+	left: 19vw;
+	z-index:0;
+}
+
+.big-display-right-line-2::after{
+  position: absolute;
+  bottom:-4%;
+  height: 45%;
+  content: '';
+  background-color: #DA4E31;
+  left: -1.5%; /* offset the left to account for half of the extended length (10% / 2) */
+  width: 103%; /* extend the length a little bit */
+  z-index: -1;
+}
+
+
+.big-display-right-line-3 {
+	position: absolute;
+	font-size:1.75vw;
+	top: 18vw;
+	left: 57vw;
+	z-index:3;
+}
+
+.big-display-right-line-3::after{
+  position: absolute;
+  bottom:-6%;
+  height: 40%;
+  content: '';
+  background-color: #DA4E31;
+  left: -1.5%; /* offset the left to account for half of the extended length (10% / 2) */
+  width: 103%; /* extend the length a little bit */
+  z-index: -1;
+}
+
+
+.big-display-left {
+    position:relative;
+	width: 72vw;
+	margin-top: 16vw;
+	/*margin-right: 28vw;*/
+	left: 0vw;
+	height:24vw;
+	font-family: "Eusthalia Sans Slant";
+	font-size: 3vw;
+	background-color: #EADFC0;
+	max-width:100%;
+}
+
+
+.big-display-center {
+	position:relative;
+	width: 72vw;
+	margin-top: 5%;
+	padding-top: 2vw;
+	left: 15vw;
+	height:24vw;
+	font-family: "Eusthalia Sans Slant";
+	font-size: 3vw;
+	background-color: #EADFC0;
+	max-width:100%;
+}
+
+.display-left-img-l {
+	position: absolute;
+	bottom:5vw;
+	right:-17vw;
+	width:37vw;
+	}
+
+.big-display-left-line-1 {
+	position: absolute;
+	font-size: 2.5vw;
+	top: 3vw;
+	left: 15vw;
+}
+
+.big-display-left-text {
+	position: absolute;
+	font-family: "Lato Light";
+	font-size: 1.8vw;
+	top: 8vw;
+	left: 15vw;
+	z-index:0;
+}
+
+.big-display-left-line-3 {
+	position: absolute;
+	font-size:1.75vw;
+	top: 19vw;
+	left: 15vw;
+	z-index:3;
+}
+
+.big-display-left-line-3::after{
+  position: absolute;
+  bottom:-6%;
+  height: 40%;
+  content: '';
+  background-color: #DA4E31;
+  left: -1.5%; /* offset the left to account for half of the extended length (10% / 2) */
+  width: 103%; /* extend the length a little bit */
+  z-index: -1;
+}
+
+
+.text-rhs {
+	font-family: "Eusthalia Sans Slant", sans-serif;
+	position:absolute;
+	display:inline-block;
+	text-align:center;
+}
+
+/*SANDWICH SECTION*/
+
+
+.wrapper{
+	width: 100%;
+	display: inline-block;
+}
+
+table.right{float: right;}
+table.left{float: left;}
+
+.td-padding{
+	padding: 1vw 5vw;
+	font-size: 1.5vw;
+}
+
+.col-12-sm{
+	width: 100%;
+}
+
+@media only screen and (max-width: 368px) {
+
+	.td-padding{
+		padding: 1vw 14vw !important;
+	}
+}
+
+
+@media only screen and (max-width: 538px) {
+
+	.td-padding{
+		padding: 1vw 18vw;
+	}
+
+}
+
+@media only screen and (min-width: 768px){
+	.col-6-left{
+		width: 50%;
+		display:block;
+		float: left;
+	}
+	.col-6-right{
+		width: 50%;
+		display:block;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.col-6-left, .col-6-right{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 992px) {
+
+	table.right{
+		float: none;
+	}
+
+	table.left{
+		float: none;
+	}
+}
+
+
+
+/*MAP SECTION*/
+
+.map-bg {
+	position: relative;
+	width: 68vw;
+	float: right;
+	margin-top: 16vw;
+	height:30vw;
+	font-family: "Eusthalia Sans Slant";
+	font-size: 3vw;
+	background-color: #EADFC0;
+	z-index: -3;
+
+}
+
+.text-over-map{
+	position: relative;
+	top: 60%;
+}
+
+.text-over-map-bgcolor:after {
+	position: absolute;
+	bottom: 3%;
+	height: 45%;
+	content: '';
+	background-color: #DA4E31;
+	width: 53%;
+	z-index: -1;
+}
+/*FOOTER*/
+
+.footer{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	background: #300c06;
+	font-family: "Eusthalia Sans Slant";
+	margin-top: 10vw;
+}
+
+.footer-address{
+	padding: 0 25px;
+}

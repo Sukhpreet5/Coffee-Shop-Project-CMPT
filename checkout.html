@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No Milk</title>
+
+    <link rel=stylesheet type="text/css" href="./styles/style-main.css">
+    <link rel=stylesheet type="text/css" href="./styles/store.css">
+    <link rel=stylesheet type="text/css" href="styles/checkout.css">
+    <link rel=stylesheet type="text/css" href="styles/cart.css">
+    <link rel=stylesheet type="text/css" href="./styles/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="./styles/bootstrap.min.css">
+
+
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script src="./scripts/homepage.js"></script>
+</head>
+<body>
+<div class=header-banner-container>
+    <div class=header-banners-inside>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="store.html">Shop</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="checkout.html">
+            <div class=menu-item-cart-underline>
+            </div> <!-- end menu-item-cart-underline-->
+            <div class=menu-item-cart>
+                <span class="item-total">0</span>
+            </div> <!-- end menu-item cart-->
+        </a>
+        <div class="header-banner-text-inside">
+            <div class=small-text-inside>No</div>
+            <div class=large-text-inside>Milk</div>
+        </div>
+    </div> <!-- end of .header-banner-->
+    <div class="rhs text-rhs checkout">CART</div>
+</div> <!-- end header-banner-container -->
+<div class=clearboth></div>
+
+<div class="feature1">
+    <div><span class="feature-text1">Cart</span></div>
+</div> <!-- end of feature -->
+
+
+<div class="basket big-display-center text-center uppercase">
+    <table class="cart">
+        <tr style="font-size:1.5vw; font-family: 'Eusthalia Sans Slant';">
+            <th style="padding-left: 15vw;">Item</th>
+            <th style="padding-left: 10vw">QTY</th>
+            <th style="padding-left: 15vw">Total</th>
+        </tr>
+    </table>
+    <p class="cart-contents margin-top">Your cart is currently empty.</p>
+</div>
+
+<!--<div class="big-display-right-checkout">-->
+    <!--<table class="cart-subtotal" style="width:100%">-->
+        <!--<tr class="">-->
+            <!--<th class="total-padding-down">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtotal</th>-->
+            <!--<td class="total-padding-down">.....</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total</th>-->
+            <!--<td>.....</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--</div>-->
+
+
+<div class="feature1">
+    <div><span class="feature-text1">Billing</span></div>
+</div> <!-- end of feature -->
+
+
+<!--BILLING SECTION-->
+
+<div class="row no-margin-right">
+    <div class="column" style="display: block">
+        <input class="left" placeholder="FIRST NAME">
+
+    </div>
+
+    <div class="column">
+        <input class="right" placeholder="LAST NAME">
+    </div>
+
+    <div class="column" style="display: block">
+        <input class="left" placeholder="ADDRESS (LINE ONE)">
+    </div>
+
+
+    <div class="column" style="display: block">
+        <input class="right" placeholder="ADDRESS (LINE TWO)">
+    </div>
+
+    <div class="column">
+        <input class="left" placeholder="CITY">
+    </div>
+
+    <div class="column">
+        <input class="right" placeholder="PROVINCE/STATE">
+    </div>
+
+    <div class="column">
+        <input class="left" placeholder="POSTAL/ZIP CODE">
+    </div>
+
+    <div class="column">
+        <input class="right" placeholder="COUNTRY">
+    </div>
+</div>
+
+
+<div class="feature1">
+    <div><span class="feature-text1">Payment</span></div>
+</div> <!-- end of feature -->
+
+
+<!--PAYMENT SECTION-->
+
+<div class="row no-margin-right">
+    <div class="column" style="display: block">
+        <input class="left" placeholder="NAME">
+    </div>
+</div>
+
+
+<div class="row no-margin-right">
+    <div class="column-md">
+        <input class="right" placeholder="CREDIT CARD NUMBER">
+        <img class="cards" src="images/icons/mastercard.svg">
+        <img class="cards" src="images/icons/visa.svg">
+    </div>
+</div>
+
+<div class="row no-margin-right">
+
+    <div class="column" style="display: block">
+        <input class="left" placeholder="EXPIRY DATE">
+
+    </div>
+
+    <div class="column">
+        <input class="right" placeholder="SECURITY CODE">
+    </div>
+
+</div>
+
+<div class="text-center ">
+    <button class="complete-purchase eusthalia" type="button" onclick="alert('Thank you for your order')">COMPLETE PURCHASE</button>
+</div>
+
+<div class=big-display-left>
+		<span class=big-display-left-line-1>
+            THANK YOU
+		</span>
+    <img class=display-left-img-l src="images/photos/feature-coffee-in-window.png">
+    <span class=big-display-left-text>
+			Thank you for supporting your local small<br>
+			business. It's because of your support that<br>
+			we're able to continue to serve and promote<br>
+			quality, local products.
+		</span>
+</div>
+
+<!--MAP SECTION-->
+
+<div class=map-bg>
+    <img style="width: 100%; z-index: -2;" class=display-right-img-l src="images/photos/footer-map.png">
+    <div class="text-over-map text-over-map-bgcolor">
+        <p>107-117 SCIENCE PLACE</p>
+    </div>
+</div>
+
+
+<!--FOOTER-->
+<div class="footer whiteFont">
+
+    <p class="footer-address">
+        &copy; NO MILK COFFEE
+    </p>
+
+    <p class="footer-address">
+        107-117 SCIENCE PLACE<br>SASKATOON, SK
+    </p>
+
+</div>
+
+</body>
+
+<script src="./scripts/store.js"></script>
+
+</html>

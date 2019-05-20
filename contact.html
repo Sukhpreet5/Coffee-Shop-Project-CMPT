@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No Milk</title>
+    <link rel=stylesheet type="text/css" href="./styles/style-main.css">
+    <link rel=stylesheet type="text/css" href="./styles/store.css">
+    <link rel=stylesheet type="text/css" href="styles/checkout.css">
+    <link rel=stylesheet type="text/css" href="styles/cart.css">
+	<link rel=stylesheet type="text/css" href="./styles/bootstrap.css">
+	<link rel=stylesheet type="text/css" href="./styles/bootstrap.min.css">
+
+
+	<script src="./scripts/bootstrap.js"></script>
+	<script src="./scripts/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./scripts/homepage.js"></script>
+
+</head>  
+<body>
+	<div class=header-banner-container>
+		<div class=header-banners-inside>
+			<nav>
+				<ul>
+  					<li class="menu-item"><a href="index.html">Home</a></li>
+  					<li class="menu-item"><a href="store.html">Shop</a></li>
+  					<li class="menu-item"><a href="contact.html">Contact</a></li>
+		  		</ul>		     	
+    	     </nav>
+			<a href="checkout.html">
+    	    	<div class=menu-item-cart-underline>
+   				</div> <!-- end menu-item-cart-underline-->
+ 				<div class=menu-item-cart>
+					<span class="item-total">0</span>
+				</div> <!-- end menu-item cart-->
+  			</a>
+			<div class="header-banner-text-inside">
+				<div class=small-text-inside>No</div>
+				<div class=large-text-inside>Milk</div>
+			</div>
+    	</div> <!-- end of .header-banner-->
+    	<script>contactPageElements();</script>
+  	</div> <!-- end header-banner-container -->
+
+
+	<div class=clearboth></div>
+		<div class="feature1">
+   			<div class="rhs text-rhs checkout">Contact</div>
+		</div> <!-- end of feature -->
+
+
+
+    <div class="feature1 margin-bottom-large">
+        <div class="feature-text1">Contact</div>
+    </div> <!-- end of feature -->
+
+    <div class="row no-margin-right">
+        <div class="column" style="display: block">
+            <input class="left" placeholder="FIRST NAME">
+
+        </div>
+
+        <div class="column">
+            <input class="right" placeholder="LAST NAME">
+        </div>
+
+        <div class="column" style="display: block">
+            <input class="left" placeholder="EMAIL ADDRESS">
+        </div>
+
+
+        <div class="column" style="display: block">
+            <input class="right" placeholder="PHONE NUMBER">
+        </div>
+
+        <div class="col-12-sm text-center">
+            <input class="message" placeholder="MESSAGE">
+        </div>
+    </div>
+
+
+    <div class="text-center margin-top">
+        <button class="complete-purchase eusthalia" type="button" onclick="alert('Thank you for your Contacting Us')">SUBMIT</button>
+    </div>
+
+
+	<!--MAP SECTION-->
+
+	<div class=map-bg>
+		<img style="width: 100%; z-index: -2;" class=display-right-img-l src="images/photos/footer-map.png">
+		<div class="text-over-map text-over-map-bgcolor">
+			<p>107-117 SCIENCE PLACE</p>
+		</div>
+	</div>
+
+	<!--FOOTER-->
+	<div class="footer whiteFont">
+
+		<p class="footer-address">
+			&copy; NO MILK COFFEE
+		</p>
+
+		<p class="footer-address">
+			107-117 SCIENCE PLACE<br>SASKATOON, SK
+		</p>
+
+	</div>
+
+	<!--Cart Information Hidden-->
+	<div class="basket hidden">
+		<table class="cart">
+			<tr>
+				<th>Item</th>
+				<th>Price</th>
+				<th>QTY</th>
+				<th>Total</th>
+			</tr>
+		</table>
+		<p class="cart-contents">Your cart is currently empty.</p>
+	</div>
+</body>
+<script src="./scripts/store.js"></script>
+</html>

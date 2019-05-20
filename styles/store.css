@@ -1,0 +1,84 @@
+.image-on-left{
+    position: absolute;
+    bottom: 5vw;
+    left: -6vw;
+    width: 25vw;
+}
+
+
+.whole-bean-heading{
+    position: absolute;
+    font-size:2.5vw;
+    top: 6vw;
+    left: 20vw;
+}
+
+.whole-bean-text {
+    position: absolute;
+    font-family: "Lato-Light";
+    padding: 25px 10px;
+    font-size:2vw;
+    font-weight: 500;
+    top: 10vw;
+    left: 19vw;
+    z-index:3;
+}
+
+.equipment-1{
+    font-family: "Eusthalia Sans Slant";
+    font-size: 1.5vw;
+}
+
+.equipment-1-sub-text{
+    font-size: 1.8vw;
+}
+.equipment-1-img-pos{
+    margin-left: 25vw;
+    margin-top: 2vw;
+}
+
+.equipment-1-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+.equipment-2-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.equipment-3-img {
+    width: 100%;
+    max-width: 675px;
+    height: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-sm-3{
+    width: 25%;
+    display:block;
+
+}
+
+.col-sm-6{
+    width: 50%;
+    display:block;
+}
+
+.col-sm-4{
+    width: 33.3333333%;
+    display:block;
+}
+
+@media only screen and (max-width: 768px){
+
+    .col-sm-3, .col-sm-6, .col-sm-4{
+        width: 100%;
+    }
+}

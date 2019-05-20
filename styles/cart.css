@@ -1,0 +1,43 @@
+
+
+table, th, td {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    font-weight: 400;
+}
+
+th.total-padding-up{
+    padding-top: 8%;
+}
+
+td.total-padding-up{
+    padding-bottom: 8%;
+}
+
+th.total-padding-down{
+    padding-bottom: 8%;
+}
+
+td.total-padding-down{
+    padding-bottom: 8%;
+}
+
+
+.cart-subtotal{
+    position: absolute;
+    font-family: "Eusthalia Sans Slant";
+    font-size: 1.75vw;
+    top: 6vw;
+    /*left: 5vw;*/
+}
+
+
+button.delete{
+    padding: 2px 5px;
+    background-color: #300c06;
+    color: #eadfc0;
+    font-size: 1.2vw;
+}

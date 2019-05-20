@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No Milk</title>
+
+
+  	<link rel=stylesheet type="text/css" href="./styles/style-main.css">
+
+	<script src="./scripts/homepage.js"></script>
+
+</head>
+<body>
+	<div class=header-banner-container>
+		<div id=header-banner-home>
+			<nav>
+				<ul>
+  					<li class="menu-item"><a href="index.html">Home</a></li>
+  					<li class="menu-item"><a href="store.html">Shop</a></li>
+  					<li class="menu-item"><a href="contact.html">Contact</a></li>
+		  		</ul>
+    	     </nav>
+    	    <a href="checkout.html">
+    	    	<div class=menu-item-cart-underline>
+   				</div> <!-- end menu-item-cart-underline-->
+ 				<div class=menu-item-cart>
+					<span class="item-total">0</span>
+				</div> <!-- end menu-item cart-->
+  			</a>
+			<div class="header-banner-text-home">
+				<div class="small-text">No</div>
+				<div class=large-text>Milk</div>
+			</div>
+    	</div> <!-- end of .header-banner-->
+    	<script> homePageElements();</script>
+  	</div> <!-- end header-banner-container -->
+
+ 	<div class=clearboth></div>
+
+	<div class="feature1">
+   		<div><span class="feature-text1">coffee</span></div>
+	</div> <!-- end of feature -->
+
+	<div class="feature2">
+   		<div>BREWED TO ORDER</div>
+	</div> <!-- end of feature3 -->
+
+	<div class=coffee-menu></div>
+	<script>createCoffeeMenu();</script>
+	<div class=clearboth></div>
+
+	<div class=big-display-right>
+		<span class=big-display-right-line-1>
+			Proudly serving
+		</span>
+		<img class=display-right-img-l src="images/photos/shop-french-roast.png">
+		<span class=big-display-right-line-2>
+			Stumptown Coffee
+		</span>
+		<span class=big-display-right-line-3>
+			Shop Now &gt;
+		</span>
+	</div>
+
+	<!--SANDWICH SECTION-->
+
+	<div class="feature1">
+		<div><span class="feature-text1">SANDWICHES</span></div>
+	</div> <!-- end of feature -->
+
+	<div class="feature2">
+		<div>FRESH AND LOCAL</div>
+	</div> <!-- end of feature3 -->
+
+
+	<div class="wrapper">
+		<div class="col-6-left">
+
+			<table class="right eusthalia">
+				<tr>
+					<td class="td-padding">TACO IN A BUN</td>
+					<td class="td-padding">8</td>
+				</tr>
+			</table>
+
+		</div>
+
+
+		<div class="col-6-right">
+
+			<table class="left">
+				<tr>
+					<td class="td-padding eusthalia">THE SUNFLOWER</td>
+					<td class="td-padding eusthalia">7</td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<div class="col-6-left text-right">
+
+			<p style="padding-right: 100px">Braised Beef in adobo sauce, arugula,<br> pickled onion, jalapeno, and feta.</p>
+
+		</div>
+
+
+		<div class="col-6-right text-left">
+
+			<p style="padding-left: 65px">Grilled chicken with sprouts, avocado,<br> charred red pepper, cucumber, and roasted<br> garlic hummus.</p>
+
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+		<div class="col-6-left">
+
+			<table class="right eusthalia">
+				<tr>
+					<td class="td-padding">SUN RISE</td>
+					<td class="td-padding">6</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="col-6-right">
+
+			<table class="left eusthalia">
+				<tr>
+					<td class="td-padding">BUTCHER BOX</td>
+					<td class="td-padding">9</td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<div class="col-6-left text-right">
+
+			<p style="padding-right: 100px">Chorizo,sweet potato, sage, avocado,<br> onion, redish, fried egg, sweet chilli mayo.</p>
+
+		</div>
+
+
+		<div class="col-6-right text-left">
+
+			<p style="padding-left: 65px">Slow roasted porchetta with pesto, arugula,<br> shallots, caramelized onion, and asiago.</p>
+
+		</div>
+
+	</div>
+
+	<div class=big-display-left>
+		<span class=big-display-left-line-1>
+			Locally Owned
+		</span>
+		<img class=display-left-img-l src="images/photos/feature-indoor-photo.png">
+		<span class=big-display-left-text>
+			We're proud to be from Saskatoon, serving </br>
+			Saskatoon. Using local market ingredients and </br>
+			legendary beans, we're elevating what it </br>
+			means to be a coffee shop. Come see what </br>
+			we're about, and let us make you a drink.
+		</span>
+		<span class=big-display-left-line-3>
+			Reach Out &gt;
+		</span>
+	</div>
+
+	<!--MAP SECTION-->
+
+	<div class=map-bg>
+        <img style="width: 100%; z-index: -2;" class=display-right-img-l src="images/photos/footer-map.png">
+        <div class="text-over-map text-over-map-bgcolor">
+        <p>107-117 SCIENCE PLACE</p>
+        </div>
+	</div>
+
+	<!--FOOTER-->
+	<div class="footer whiteFont">
+
+		<p class="footer-address">
+			&copy; NO MILK COFFEE
+		</p>
+
+		<p class="footer-address">
+			107-117 SCIENCE PLACE<br>SASKATOON, SK
+		</p>
+
+	</div>
+
+	<!--Cart Information Hidden-->
+	<div class="basket hidden">
+		<table class="cart">
+			<tr>
+				<th>Item</th>
+				<th>Price</th>
+				<th>QTY</th>
+				<th>Total</th>
+			</tr>
+		</table>
+		<p class="cart-contents">Your cart is currently empty.</p>
+	</div>
+</body>
+<script src="./scripts/store.js"></script>
+</html>

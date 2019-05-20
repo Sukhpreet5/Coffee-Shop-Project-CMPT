@@ -1,0 +1,121 @@
+//alert("enter js");
+
+/*
+function createRhsText(col,str)
+{
+	var rhsText = document.createElement("div");
+	rhsText.className="text-rhs";
+	rhsText.innerHTML=str;
+	rhsText.style.color=col;
+	return rhsText;
+}
+*/
+//
+// Code for creating RHS boxes on the different pages
+// w = width in percent of the page
+// l = absolute move to the left
+// h = height of the box
+// col = background colour
+// topVal = where in % the top starts
+// textSz = size of the text
+// textLeft = how far to move text to the left
+// HTMLContent = obvious
+
+function createRhsElement(w, l, h, col, textCol, topVal, textTop, textSz, textTop, HTMLcontent) {
+	var hbc = document.getElementsByClassName("header-banner-container")[0];
+	var newRhs = document.createElement("div");
+	newRhs.className="rhs text-rhs";
+	newRhs.style.backgroundColor=col;
+	newRhs.style.top=topVal;
+	newRhs.style.left = l;
+	newRhs.style.width=w;
+	newRhs.style.height=h;	
+	newRhs.style.paddingTop=textTop;
+	newRhs.style.color=textCol;
+	newRhs.style.fontSize = textSz;
+	newRhs.innerHTML=HTMLcontent;
+	hbc.appendChild(newRhs);
+}
+
+function homePageElements() {
+	var hbc = document.getElementsByClassName("header-banner")[0];
+	createRhsElement("36vw", "64vw", "24vw", "#300306", "white", "0vw", "12vw", "3vw", "7vw","Coffee<br>&<br>Sandwiches");
+	createRhsElement("36vw", "64vw", "21vw", "#DA4E31", "#300306", "30vw", "12vw","3vw","9vw", "Every Day<br>-7 to -7");
+}
+
+function shopPageElements() {
+	var hbc = document.getElementsByClassName("header-banner")[0];
+	createRhsElement("40vw", "60vw", "6vw",  "#300306", "#DBDBDB", "0vw", "4vw", "3vw","7vw", "SHOP");
+	createRhsElement("40vw", "60vw", "20.5vw", "#300306", "#DBDBDB", "12vw","4vw", "2vw","0vw",
+		"<br>COFFEE<br>EQUIPMENT<BR>BREW KITS");
+
+}
+
+// this may be totally out of date
+
+function contactPageElements() {
+//	alert("in contact els");
+	var hbc = document.getElementsByClassName("header-banner")[0];
+	createRhsElement("40vw", "60vw", "18.5vw",  "#300306", "#DBDBDB", "0vw", "4vw", "3vw","14vw", "CONTACT");
+//	alert("done");
+
+}
+
+function featureText(str) {
+	return str;
+}
+
+// The following two functions show how a catalogue might be represented as a Javascript object
+// and how such a catalogue might be displayed
+
+var coffeeMenuItems = [
+	{drink:"Americano", price:"3",textPiece:""},
+	{drink:"Drip",  price:"2", textPiece:""},
+	{drink:"Cortado", price:"4", textPiece:""},
+	{drink:"Espresso", price:"4", textPiece:""},
+	{drink:"Cappucino", price:"4", textPiece:""},
+	{drink:"Cold Brew", price:"4", textPiece:""},
+	{drink:"Macchiato", price:"4", textPiece:""},
+	{drink:"Iced Americano", price:"3.5", textPiece:""},
+	{drink:"Latte", price:"4.5", textPiece:""},
+	{drink:"Iced Latte", price:"4.5", textPiece:""}
+];
+
+
+function createCoffeeMenu() {
+	var menu = document.getElementsByClassName("coffee-menu")[0];
+	createMenu(menu, coffeeMenuItems);
+}
+
+function createMenu(menu, menuItems) {
+//	alert("in");
+	var n = menuItems.length;
+//	alert(coffeeMenuItems.length);
+	for (var i = 0; i < n; i++ ){
+		var box1 = document.createElement("div");
+		if ( i % 2 == 0) 
+			box1.className = "coffee-menu-item left";
+		else
+			box1.className = "coffee-menu-item right";
+		var box2 = document.createElement("div");
+		box2.className = "coffee-menu-item-product";
+		box2.innerHTML = menuItems[i].drink;
+		var box3 = document.createElement("div");
+		box3.className = "coffee-menu-item-cost";
+		box3.innerHTML = menuItems[i].price;
+		box1.appendChild(box2);
+		box1.appendChild(box3);
+		menu.appendChild(box1);
+	}
+}
+alert("loaded");
+function create-item-container()
+{
+	alert("in fn");
+	var bod = document.getElementsByTagName("body")[0];
+	var ic = document.createElement("div");
+	ic.ClassName = "item-container";
+	bod.appendChild(ic);
+	alert("done fn");
+}
+
